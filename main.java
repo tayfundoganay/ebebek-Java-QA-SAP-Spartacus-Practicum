@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Employee employee = new Employee("Tayfun Doganay", 1200, 47, 2012);
-        System.out.println(employee + "\n Tax = " + employee.tax()+ "\t Bonus= " + employee.bonus() +
-                "\n raiseSalary = " + employee.raiseSalary());
-
+        Employee employee = new Employee("Tayfun", (double)1500.0, 58, 2010);
+        System.out.println(employee + "\nVergi = " + employee.tax()+ "\nBonus = " + employee.bonus() +
+                "\nMaas Artisi = " + employee.raiseSalary() +
+                "\nVergi Ve Bonuslar ile Birlikte Maas = " + (employee.salary + employee.bonus() - employee.tax()) +
+                "\nToplam Maas = " + (employee.salary + employee.raiseSalary()+ employee.bonus() - employee.tax()));
     }
 }
