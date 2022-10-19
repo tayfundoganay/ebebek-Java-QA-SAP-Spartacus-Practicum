@@ -30,8 +30,10 @@ public class Employee {
     }
 
     @Override
-    public String toString() {
-        return String.format("Adi= %s\nMaasi= %.1f\nCalisma Saati= %d\nBaslangic Yili= %d",
-                this.name,this.salary,this.workHours,this.hireYear);
+     public String toString() {
+        return String.format("Adi= "+ this.name +
+                "\nMaasi= " + this.salary +
+                "\nCalisma Saati= "+ this.workHours +
+                "\nBaslangic Yili= "+ this.hireYear);
     }
 }
